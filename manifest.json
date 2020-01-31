@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "name": "Time is Money",
+  "description": "Descubra o valor do produto em tempo trabalhado",
+  "author": "Murilo Souza",
+  "permissions": ["storage"],
+  "background":{
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Time is Money",
+    "default_popup": "index.html",
+    "default_icon": "icon.jpeg"
+  }
+}
