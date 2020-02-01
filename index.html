@@ -1,19 +1,24 @@
 <html>
   <head>
     <title>Time is Money</title>
+    <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <h1>
+    <h1 class="title">
       Time is money
     </h1>
     <form>
-      <span class="intro">
-        Please, enter your monthly income
-      </span>
-
-      <input type="text" name="time-is-money-monthly-income">
-      <input type="submit" value="Send">
+      <div class="form-group">
+        <label class="label" for="monthly-income">
+          Your monthly income
+        </label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="monthly-income" />
+          <button class="btn" id="confirmButton" type="submit">OK</button>
+        </div>
+      </div>
     </form>
-    <span class="note">This info will be saved in your browser. We haven't access to it.</span>
+    <span class="note">This info will be saved in your browser. We don't have access to it.</span>
+    <script src="./changed-income.js"></script>
   </body>
 </html>
